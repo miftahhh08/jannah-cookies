@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jannah Cookies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Cairo:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fffaf2;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #d50000, #000000, #ffffff, #007a3d);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .brand-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .arab-title {
+      font-family: 'Cairo', sans-serif;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #f6e9da;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+    }
+
+    .arabic-text {
+      font-family: 'Cairo', sans-serif;
+      font-size: 1.2rem;
+      color: #b8860b;
+      margin: 10px 0;
+    }
+
+    .btn {
+      background-color: #e63946;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 20px;
+      display: inline-block;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ba2d3b;
+    }
+
+    .btn:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) inset;
+    }
+
+    .produk {
+      background-color: #fff2e5;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .produk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border: 2px solid #6a4b20;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .tentang {
+      background-color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .badge-palestine {
+      display: inline-block;
+      background-color: #006400;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+
+    .kontak {
+      background-color: #f3efe9;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="arab-title">بِسْمِ ٱللَّٰهِ الرَّحْمَٰنِ الرَّحِيمِ</h1>
+    <h1 class="brand-title">Jannah <span style="color:#e63946;">Cookies</span></h1>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="beranda" class="hero" data-aos="fade-up">
+    <div class="container">
+      <h2>Selamat Datang di Jannah Cookies 🍪</h2>
+      <p class="arabic-text">حَلَاوَةُ الْمَذَاقِ وَرِسَالَةُ الْقَلْبِ</p>
+      <p>Kami membuat cookies lezat penuh cinta, untuk rasa dan perjuangan.</p>
+      <a href="#produk" class="btn">Lihat Produk</a>
+    </div>
+  </section>
+
+  <section id="produk" class="produk">
+    <h2 data-aos="fade-up">Varian Cookies</h2>
+    <div class="produk-grid">
+      <div class="card" data-aos="zoom-in">
+        <img src="images/original.jpeg" alt="Original Cookies" />
+        <h3>Original</h3>
+        <p>Rp 7.500 / pcs</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/matcha.jpeg" alt="Matcha White Chocolate Cookies" />
+        <h3>Matcha White Chocolate</h3>
+        <p>Rp 8.000 / pcs</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/red velvet (1).jpeg" alt="Red Velvet White Chocolate Cookies" />
+        <h3>Red Velvet White Chocolate</h3>
+        <p>Rp 8.500 / pcs</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="images/double chocolate.jpeg" alt="Double Chocolate Cookies" />
+        <h3>Double Chocolate</h3>
+        <p>Rp 8.000 / pcs</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="images/ube cookie.jpeg" alt="Ube with White Chocolate Cookies" />
+        <h3>Ube with White Chocolate</h3>
+        <p>Rp 8.500 / pcs</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="500">
+        <img src="images/cookie monster.png" alt="Cookie Monster Cookies" />
+        <h3>Cookie Monster</h3>
+        <p>Rp 10.000 / pcs</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="tentang" data-aos="fade-up">
+    <h2>Tentang Kami</h2>
+    <p>
+      Jannah Cookies hadir untuk membagikan kebahagiaan melalui setiap gigitan. Kami adalah usaha rumahan yang mengolah bahan berkualitas dan rasa yang otentik – sekaligus menumbuhkan empati dan solidaritas untuk Palestina. Setiap cookies dibuat dengan penuh cinta, keyakinan, dan harapan agar donasi kecil dari setiap pembelian turut berbagi kasih dan dukungan.
+    </p>
+    <div class="badge-palestine">🇵🇸 #SolidaritasUntukPalestina</div>
+  </section>
+
+  <section id="kontak" class="kontak" data-aos="fade-up">
+    <h2>Pesan Sekarang</h2>
+    <p>📱 WhatsApp: <a href="https://wa.me/6281279062069">+62 812-7906-2069</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/jannah.cookies">@jannah.cookies</a></p>
+    <a href="https://wa.me/6281279062069" class="btn">Pesan via WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jannah Cookies. Made with love & doa untuk Palestina 🇵🇸</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
